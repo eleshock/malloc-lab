@@ -54,7 +54,7 @@ team_t team = {
 #define WSIZE       4       /* Word and header/footer size (bytes) */
 #define DSIZE       8       /* Double word size (bytes) */
 #define MINIMUM     16      /* Initial Prologue block size, header, footer, PRED, SUCC */
-#define CHUNKSIZE   (1<<12) /* Extend heap by this amount : 4096bytes -> 4kib */
+#define CHUNKSIZE   (1<<12) /* Extend heap by this amount : 4096bytes -> 4kib; usual page size */
 
 #define MAX(x, y) ((x) > (y) ? (x) : (y))  // 최댓값 구하기
 
