@@ -47,7 +47,7 @@ team_t team = {
 
 #define WSIZE 4 // word and header footer 사이즈를 byte로. 
 #define DSIZE 8 // double word size를 byte로
-#define CHUNKSIZE (1<<12) // heap 확장을 위한 기본 크기(최소크기)를 4KB로 지정
+#define CHUNKSIZE (1<<12) // heap 확장을 위한 기본 크기(최소크기)를 4KB로 지정, 이 때 4KB는 통상적인 '페이지'의 크기임
 
 #define MAX(x,y) ((x)>(y)? (x) : (y)) // x, y 비교하여 큰 값 취하기
 
